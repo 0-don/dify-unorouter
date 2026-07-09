@@ -1,0 +1,31 @@
+version: 0.0.1
+type: plugin
+author: unorouter
+name: unorouter
+label:
+  en_US: UnoRouter
+description:
+  en_US: Access 200+ OpenAI-compatible chat models, most with a free tier, through UnoRouter.
+icon: icon.svg
+privacy: PRIVACY.md
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+plugins:
+  models:
+    - provider/unorouter.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: null
+created_at: 2026-07-09T00:00:00.000000+00:00
+verified: false

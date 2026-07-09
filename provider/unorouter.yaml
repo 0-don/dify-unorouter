@@ -1,0 +1,71 @@
+provider: unorouter
+label:
+  en_US: UnoRouter
+description:
+  en_US: Open-source gateway serving 200+ models through one OpenAI-compatible API key; models with a ":free" suffix cost nothing.
+icon_small:
+  en_US: icon.svg
+icon_large:
+  en_US: icon.svg
+background: "#1f2022"
+help:
+  title:
+    en_US: Get your API key from UnoRouter
+  url:
+    en_US: https://unorouter.com/token
+supported_model_types:
+  - llm
+configurate_methods:
+  - predefined-model
+  - customizable-model
+provider_credential_schema:
+  credential_form_schemas:
+    - variable: api_key
+      label:
+        en_US: API Key
+      type: secret-input
+      required: true
+      placeholder:
+        en_US: Enter your UnoRouter API key
+model_credential_schema:
+  model:
+    label:
+      en_US: Model Name
+    placeholder:
+      en_US: Enter a model ID from unorouter.com/models
+  credential_form_schemas:
+    - variable: api_key
+      label:
+        en_US: API Key
+      type: secret-input
+      required: true
+      placeholder:
+        en_US: Enter your UnoRouter API key
+    - variable: mode
+      show_on:
+        - variable: __model_type
+          value: llm
+      label:
+        en_US: Completion mode
+      type: select
+      required: false
+      default: chat
+      placeholder:
+        en_US: Select completion mode
+      options:
+        - value: completion
+          label:
+            en_US: Completion
+        - value: chat
+          label:
+            en_US: Chat
+models:
+  llm:
+    position: models/llm/_position.yaml
+    predefined:
+      - models/llm/*.yaml
+extra:
+  python:
+    provider_source: provider/unorouter.py
+    model_sources:
+      - models/llm/llm.py
