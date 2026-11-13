@@ -2,7 +2,7 @@ provider: unorouter
 label:
   en_US: UnoRouter
 description:
-  en_US: Open-source gateway serving 200+ models through one OpenAI-compatible API key; models with a ":free" suffix cost nothing.
+  en_US: Open-source gateway that serves models from every major provider through one OpenAI-compatible API key; models with a ":free" suffix cost nothing.
 icon_small:
   en_US: icon.svg
 icon_large:

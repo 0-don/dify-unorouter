@@ -1,6 +1,6 @@
 # UnoRouter Dify Plugin
 
-Model provider plugin that connects Dify to [UnoRouter](https://unorouter.com), an open-source OpenAI-compatible gateway serving 200+ models (Claude, GPT, Gemini, DeepSeek, Kimi, GLM, Qwen and more) behind a single API key. Models with a `:free` suffix cost nothing.
+Model provider plugin that connects Dify to [UnoRouter](https://unorouter.com), an open-source OpenAI-compatible gateway that serves models from every major provider (Claude, GPT, Gemini, DeepSeek, Kimi, GLM, Qwen and more) behind a single API key. Models with a `:free` suffix cost nothing.
 
 ## Setup
 
@@ -17,6 +17,8 @@ Paid: `claude-sonnet-5`, `gpt-5.5`, `gemini-3.5-flash`, `kimi-k2.6`, `minimax-m2
 Free models run on shared pools with a light per-model rate limit (about 1 request per minute per model); rotate between free models or use paid models for higher throughput.
 
 ## Development
+
+Source code: https://github.com/0-don/dify-unorouter
 
 ```bash
 pip install dify-plugin

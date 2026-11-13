@@ -1,11 +1,11 @@
-version: 0.0.1
+version: 0.0.2
 type: plugin
 author: unorouter
 name: unorouter
 label:
   en_US: UnoRouter
 description:
-  en_US: Access 200+ OpenAI-compatible chat models, most with a free tier, through UnoRouter.
+  en_US: OpenAI-compatible chat models from every major provider through one UnoRouter key, free models included.
 icon: icon.svg
 privacy: PRIVACY.md
 resource:
