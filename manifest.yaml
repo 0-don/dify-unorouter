@@ -10,6 +10,8 @@ icon: icon.svg
 privacy: PRIVACY.md
 repo: https://github.com/0-don/dify-unorouter
 contact: support@unorouter.com
+tags:
+  - other
 resource:
   memory: 1048576
   permission:
